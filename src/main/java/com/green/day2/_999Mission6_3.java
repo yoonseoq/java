@@ -27,7 +27,7 @@ public class _999Mission6_3 {
                 } else if (standHeight==height) {
                     System.out.println("당신은 평균입니다");
                 }else {
-                    System.out.println("당신은 평균보다 작습니다");
+                    System.out.println("당신은 평균보다 작습니다^^");
                 }
 
     }
