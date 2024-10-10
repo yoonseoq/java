@@ -16,7 +16,7 @@ public class _999Mission5_1 {
 
         if (score >= 90) {
             grade='A';
-            if (score >= 98){
+            if ((score >= 98)||(score==100)){
                 opt ='+';
             } else if (score < 94) {
                 opt ='-';
