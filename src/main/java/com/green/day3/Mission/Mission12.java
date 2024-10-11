@@ -1,6 +1,6 @@
-package com.green.day3.Mission7;
+package com.green.day3.Mission;
 
-public class _25Mission {
+public class Mission12 {
     public static void main(String[] args) {
 
         int n=0;

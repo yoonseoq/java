@@ -9,6 +9,7 @@ public class _25ForInFor {
             for(int z=0;z<5;z++){
                 System.out.printf("[%d,%d]",i,z);
             }
+
             System.out.println();//z값이 끝나야  i값이 갱신되고 값도 새로워짐
         }
     }
