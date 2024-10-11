@@ -12,11 +12,5 @@ public class Mission10 {
                 System.out.println();//개행
 
         }
-
-
-
-
-
-
     }
 }
