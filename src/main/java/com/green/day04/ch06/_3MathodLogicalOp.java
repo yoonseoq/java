@@ -7,7 +7,6 @@ public class _3MathodLogicalOp {
         System.out.println("b:"+b);
         boolean b2= logicalOp2(n1);
         System.out.println("b2:"+b2);
-
     }
 
     static boolean logicalOp1(int n){
@@ -16,8 +15,4 @@ public class _3MathodLogicalOp {
     static boolean logicalOp2(int n1){
         return ((n1%2==0)&&(n1%3==0));
     }
-
-
-
-
 }

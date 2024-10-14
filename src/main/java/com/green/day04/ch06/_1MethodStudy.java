@@ -20,6 +20,7 @@ public class _1MethodStudy {
      return(비void) 메소드 :리턴하는 값이 있다. 결과값이 있다
 
                                      아규먼트 줄임말*/
+
     public static void main(String[] args) {
         sum(8, 7);   //sum메소드 호출 >> 8이 n1,7이 n2로 대입 void 메소드에 보내는 값은 아규먼트
         sum(18, 7);  //sum메소드 호출 매개변수란 부를때마다 값이 바뀜

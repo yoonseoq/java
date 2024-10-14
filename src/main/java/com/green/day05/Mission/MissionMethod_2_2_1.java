@@ -1,6 +1,6 @@
 package com.green.day05.Mission;
 
-public class MissionMethod_2_2 {
+public class MissionMethod_2_2_1 {
     public static void main(String[] args) {
 
         printStarSquare(4);
@@ -9,7 +9,7 @@ public class MissionMethod_2_2 {
     }
 
     static void printStar(int z) {
-        for (int i=0;i<z;i++){
+        for (int i=1;i<=z;i++){
             System.out.print("* ");
         }
             System.out.println();
@@ -17,15 +17,17 @@ public class MissionMethod_2_2 {
 
     static void printStarSquare(int star) {
         for (int i=0;i<star;i++){
-            printStar(i);
+            printStar(star);
             }
 
         }
     static void printStarTrinagle(int star) {
-        for (int i=0;i<star;i++){
-            printStar(i);
-        }
+        for (int i=0;i<=star;i++){
+            for (int z=1;z<=i;z++){
+                System.out.print("* ");
+            }
         System.out.println();
+        }
     }
 
 }

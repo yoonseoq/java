@@ -7,7 +7,8 @@ public class _4MethodRelationalOp {
         biggerNumber(30,100);
 
         if(isEquals(n1,n2)){
-            System.out.printf("%d와 %d의 값은 같습니다\n",n1,n2);//무적권 return 때려야함 가정법이 들어간 순간 boolean 이다
+            System.out.printf("%d와 %d의 값은 같습니다\n",n1,n2);
+            //무적권 return 때려야함 가정법이 들어간 순간 boolean 이다
         }
         System.out.println("お終い");
 
