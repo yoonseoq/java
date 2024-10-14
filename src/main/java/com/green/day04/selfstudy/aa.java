@@ -58,5 +58,16 @@ public class aa {
 
 
         }
+
+
+
+
+
+        for ( i=0;i<star;i++){
+            for (z=0;z<star;z++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

@@ -1,20 +1,23 @@
 package com.green.day05.Mission;
 
-public class MissionMethod_2 {
+public class MissionMethod_2_2 {
     public static void main(String[] args) {
 
-
-        printStar(4);
-        System.out.println();
-        printStarTrinagle(5);
         printStarSquare(4);
+        printStarTrinagle(4);
 
     }
 
+    static void printStar(int z) {
+        for (int i=0;i<z;i++){
+            System.out.print("* ");
+        }
+            System.out.println();
+    }
 
     static void printStarSquare(int star) {
         for (int i=0;i<star;i++){
-            printStar(i);
+            printStar(star);
             }
 
         }
@@ -22,13 +25,7 @@ public class MissionMethod_2 {
         for (int i=0;i<star;i++){
             printStar(i);
         }
-            System.out.println();
-    }
-    static void printStar(int star) {
-        for (int i=0;i<star;i++){
-            System.out.print("* ");
-        }
-            System.out.println();
+        System.out.println();
     }
 
 }
