@@ -8,7 +8,7 @@ public class BankAccountPO {
      //static이 없는 함수를 쓰고 싶으면 객체생성 먼저 해야함 new
 
 
-    public static int deposit(int amount) {//입금 담당 메소드
+    static int deposit(int amount) {//입금 담당 메소드
 
 
         balance+=amount;

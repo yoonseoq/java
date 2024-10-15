@@ -5,9 +5,9 @@ public class BankAccountTest {
        // BankAccount.deposit(4000);//왜 deposit에 빨간줄이 뜰까
         //ba는 BankAccount 객체 주소값만 담을 수 있는 참조변수 이다.
         BankAccount ba = new BankAccount();// static이 없는 애들은 이렇게 new를 붙여가면서 객체화 해야함
-        ba.deposit(1000);
+        ba.deposit(0);
         ba.checkMyBalance();
-        ba.deposit(2000);
+        ba.deposit(0);
         ba.checkMyBalance();
 
         BankAccount ba3=new BankAccount();

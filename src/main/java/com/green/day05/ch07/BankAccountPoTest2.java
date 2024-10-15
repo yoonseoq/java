@@ -2,11 +2,11 @@ package com.green.day05.ch07;
 
 public class BankAccountPoTest2 {
     public static void main(String[] args) {
-        BankAccountPO po1= new BankAccountPO();
+        BankAccountPO po1= new BankAccountPO(); //po1 객체화
         po1.deposit(1000);
         po1.checkMyBalance();
 
-        BankAccountPO po2= new BankAccountPO();
+        BankAccountPO po2= new BankAccountPO();//po2 객체화
         po2.checkMyBalance();
         /*
         static 이 붙은 값은 new를 쓸 필요가 없다
