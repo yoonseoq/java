@@ -2,11 +2,12 @@ package com.green.day06.ch09;
 
 public class GettersSettersExam {
     public static void main(String[] args) {
-        Student s1 = new Student();
+
+        Student s1 = new Student();//s1객체
         s1.setName("홍길동");
         //s1.name="홍길동";
 
-        Student s2 = new Student();
+        Student s2 = new Student();//s2객체
         s2.setName("신사임당");
         //s2.name="신사임당";
 
@@ -52,4 +53,4 @@ class Student{
     public float getHeight(){
         return height;
     }
-}
+}//오늘내용 정리하자면
