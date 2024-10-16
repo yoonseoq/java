@@ -25,10 +25,10 @@ public class StaticStudy {
 
         StaticNumberBox.sum(10,12);//22 Static 값은 애초에 각 개체마다 같은값을 저장하기에
         snb.sum();//90
-        NonStaticNumberBox nnb2 = new NonStaticNumberBox();
-        nnb2.n3=10;
-        nnb2.n4=10;
-        nnb2.sum2();//뭔가 꾸역꾸역 된 느낌
+        //NonStaticNumberBox nnb2 = new NonStaticNumberBox();
+        NonStaticNumberBox.n3=10;
+        NonStaticNumberBox.n4=10;
+        //NonStaticNumberBox.sum2();//뭔가 꾸역꾸역 된 느낌
 
     }
 }
