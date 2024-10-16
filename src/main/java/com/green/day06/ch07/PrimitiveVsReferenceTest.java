@@ -17,6 +17,9 @@ public class PrimitiveVsReferenceTest {
         NumberBox2 nb= new NumberBox2();//new 객체화. nb는 저장할수 있는 값 메인메소드가 살아있을때 사용 스코트가 다르다
         //NumberBox2()값이 저장되어 nb에 복사됨
         nb.num=10;//num값이 0인데 10으로 변경
+
+        Integer num2=num;
+        //멤버필드는 private해놔서 안뜸 멤버필드는 상수일때 뜬다
        // changeNum(nb);//nb는 정수값이 아니다 NumberBox저장값을 불러올 수 있는부분?
         changeNum(nb);//100입렫된 값으로 바뀜
         System.out.println("nb.num:"+nb.num);//changeNum(nb)호출 안하면 10

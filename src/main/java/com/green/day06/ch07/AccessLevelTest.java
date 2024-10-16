@@ -1,6 +1,6 @@
 package com.green.day06.ch07;
 
-import com.green.day06.ch09.InfoHideCircle;
+import com.green.day06.ch09.InfoHideCircle;//ctrl누르면 가짐
 
 public class AccessLevelTest { // 클래스는 한 번만 선언
     public static void main(String[] args) {
