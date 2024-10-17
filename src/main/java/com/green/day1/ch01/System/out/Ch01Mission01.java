@@ -4,12 +4,6 @@ public class Ch01Mission01 {
     public static void main(String[] args) {
         System.out.println("2+5="+2+5);
         //"2+5="+2먼저 계산
-        //
-
-
-
-
-
         System.out.println("2+5="+(2+5));
         System.out.println("2+5="+7);
         System.out.println("2+5=+7");
