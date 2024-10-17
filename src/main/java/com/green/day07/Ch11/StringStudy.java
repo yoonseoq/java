@@ -5,7 +5,7 @@ public class StringStudy {
         String str1 = "coffee";
         String str2 = "bread";
 
-        String str3 = str1.concat(str2);
+        String str3 = str1.concat(str2);//원본은 수정하지 않고 더하기 연산자로 이어붙임
         System.out.println(str3);
 
         String str4= str1+str2;
@@ -19,7 +19,7 @@ public class StringStudy {
         System.out.println("---------------");
         String str6= "abcdefghijklmnopqrstuvwxyz";
                     //0123456789...
-        System.out.println(str6.substring(3));
+        System.out.println(str6.substring(3));//문자열 자르기(3번부터 끝까지 문자열 출력)
         System.out.println(str6.substring(3,8));//3번부터 시작해서 8바로 전까지
         String str7 = "LExI";
         String str8 = "Lexi";
@@ -28,6 +28,7 @@ public class StringStudy {
         System.out.println(str7.compareTo(str8));
         System.out.println(str7.compareTo("LExI"));//0이면 같다는뜻
         System.out.println(str7.equalsIgnoreCase("LExI"));//대소문자 구분없이 같은지 비교
+        System.out.println(str7.equalsIgnoreCase(str8));//대소문자 구분없이 같은지 비교
         /*
         my life is waiting for you
         substring()지정한 숫자번째 부터 끝까지 냄
@@ -42,6 +43,12 @@ public class StringStudy {
         String fileNm = "nice_very.nice.jpg";
         System.out.println(".의 위치값:"+fileNm.indexOf("."));//왼쩍에서 오른쪽으러 가장빨리 찾은 인덱스값을 리턴
         System.out.println(".의 위치값:"+fileNm.lastIndexOf("."));//왼쩍에서 오른쪽으러 가장빨리 찾은 인덱스값을 리턴
+
+
+        System.out.println("----------------------");
+        String str11="abcdefgcd";
+        String str11Result=str11.replace("cd","CD");//문자열 안의 특정키워드를
+        System.out.println("str11Result:"+str11Result);
 
     }
 }

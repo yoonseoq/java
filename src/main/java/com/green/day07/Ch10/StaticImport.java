@@ -8,7 +8,7 @@ public class StaticImport {
     public static void main(String[] args) {
         /*
         원래는 이렇게 해야 하지만
-        System.out.println(Math.E);
+        System.out.println(Math.E);//Math클래스 안에 있는 멤버필드 E
         System.out.println(Math.random());//()소괄호가 있어서 더블타입의 리턴메소드
 
         static import 선언을 하면

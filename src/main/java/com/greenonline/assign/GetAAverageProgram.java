@@ -2,7 +2,7 @@ package com.greenonline.assign;
 
 import java.util.Scanner;
 
-public class 초급_합계와_평균_계산_프로그램_짜기 {
+public class GetAAverageProgram {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

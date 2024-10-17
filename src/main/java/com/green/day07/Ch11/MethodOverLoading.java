@@ -27,7 +27,7 @@ public class MethodOverLoading {
     public void sum(int n1,int n2){}
     public void sum(long n1,int n2){}
     public void sum(String str,int n2){}
-    public void sum(int n1,String str){}
+    public void sum(int n1,String str){}//파라미터로 구분
     //public string sum(int n1,int n2){return "String"}//리턴타입으로는 구분이 되면 오버로딩이 가능
     //public void sum(int n1,int n2){}//매개변수명으로 구분 않음
 }

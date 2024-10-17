@@ -6,8 +6,8 @@ public class Car {
     private int door;
 /*
     this 사용법은 2가지
-    1.this. :멤버필드, 멤버메소드 사용, this. 생략가능 할 때가 있다
-    2.this()
+    1.this. :멤버필드, 멤버메소드 사용,  this.(나 자신의 객체주소값이 들어가는 상수) 생략가능 할 때가 있다
+    2.this():생성자를 호출할 때
  */
     public Car(String color, String gearType, int door){//3개를 받는 생성자
         this.color = color;//매게변수명이 멤버필드명과 달랐다면 this.를 생략가능
@@ -17,12 +17,13 @@ public class Car {
     }
 
     public Car(){//기존의 빈칸의 소개칸에 넣음
-        this("white","auto",4);//생성자를 호출
+        this("white","auto",4);//파라미터를 3개받는 생성자를 호출
     }
 
 
     public Car(String gearType,int door){//c4의 양식에 맞춘것
-        this("white",gearType,door);//색깔은 일단 박제해놓고 나머지 기어타입이랑 문개수 대입
+        this("white",gearType,door);//색깔은 일단 박제해놓고("  "하드코딩:기본생성자로 객체생성시 항상 같은값):
+        // 나머지 기어타입이랑 문개수 대입
 
     }
     public void introduce(){

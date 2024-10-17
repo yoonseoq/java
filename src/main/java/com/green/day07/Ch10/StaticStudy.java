@@ -22,18 +22,21 @@ public class StaticStudy {
         StaticNumberBox snb= new StaticNumberBox();
         snb.n3=20;
         snb.n4=70;
+        snb.sum();
+       // snb.sum2();
 
         StaticNumberBox.sum(10,12);//22 Static 값은 애초에 각 개체마다 같은값을 저장하기에
+        StaticNumberBox.sum(4,41);//22 Static 값은 애초에 각 개체마다 같은값을 저장하기에
         snb.sum();//90
-        //NonStaticNumberBox nnb2 = new NonStaticNumberBox();
+        NonStaticNumberBox nnb2 = new NonStaticNumberBox();
         NonStaticNumberBox.n3=10;
         NonStaticNumberBox.n4=10;
-        //NonStaticNumberBox.sum2();//뭔가 꾸역꾸역 된 느낌
+        nnb2.sum();//뭔가 꾸역꾸역 된 느낌
 
     }
 }
 class StaticNumberBox{
-    static int n1;
+    static int n1;//모든곳에서 쓰는경우는 파이널 스테틱
     static int n2;
     int n3;
     int n4;
@@ -43,6 +46,7 @@ class StaticNumberBox{
         System.out.println(n1+n2);
         NonStaticNumberBox.hello();//메인메소드에 겍체화 되엇기 때문이다.
         //helli(); static메소드에서 인스턴스 메소드 호출 불가
+
     }
     void helli(){
         System.out.println("helli");
@@ -69,6 +73,7 @@ class NonStaticNumberBox{
     }
 
     static void hello(){
+
         System.out.println("hello");
     }
 
