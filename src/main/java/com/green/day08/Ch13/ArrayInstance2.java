@@ -32,6 +32,7 @@ class  Box extends Object{
     Box(String conts){
         this.conts=conts;
 
+
     }
 //    public String toString(){// {}오버라이딩
 //        return "1";//찍혔으면 하는것
