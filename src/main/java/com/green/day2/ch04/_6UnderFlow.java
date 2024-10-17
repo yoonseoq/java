@@ -1,4 +1,4 @@
-package com.green.day2;
+package com.green.day2.ch04;
 
 public class _6UnderFlow {
     public static void main(String[] args) {
