@@ -7,12 +7,15 @@ public class ArrayInstance2 {
         각 공간에 저장되는
          */
 
+        //생성자는 클라스랑 이름이 같아야 하고 리턴타입이 없어야한다
+
         //Box b0,b1,b2,b3,b4;//b0 b1 b2 등등 각각 공간마다 박스 객체의 주소값만 담을 수 있다 memory address
 
-        Box[] arr= new Box[5];
+        Box[] arr= new Box[5];//큰박스
+        // 일단 박스 공간 5개 박스배열 개체주소값
         System.out.println(arr.length);
 
-        Box b1 = new Box("안녕");//기본생성자 추가해야함
+        Box b1 = new Box("안녕");// 큰박스 안에 작은박스 기본생성자 추가해야함
         System.out.println(b1);
         System.out.println(b1.toString());
 
