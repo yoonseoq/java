@@ -3,10 +3,10 @@ package com.green.day2;
 public class _999Mission3 {
     public static void main(String[] args) {
 
-//        int score= (int) ((Math.random())*101.0);//101.0더블로 계산하면 불필요한 형변환안해도됨
-//        System.out.printf("score:%d\n",score);
-//
-        int score=6;
+        int score= (int) ((Math.random())*101.0);//101.0더블로 계산하면 불필요한 형변환안해도됨
+      System.out.printf("score:%d\n",score);
+
+
 
         if(score>=90){
 

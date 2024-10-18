@@ -1,6 +1,7 @@
 package com.green.day04.ch06;
 
-public class _3MathodLogicalOp {
+public class
+_3MathodLogicalOp {
     public static void main(String[] args) {
         int n1=60;
         boolean b= logicalOp1(n1);

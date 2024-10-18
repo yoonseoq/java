@@ -15,7 +15,7 @@ public class _21DoWhileBasic {
 
         do{
             System.out.println("I love Java"+(n++));
-        }while (n<5);
+        }while (n<5);//일단 7출력하고 조건에 안맞으니 바로 끝나버림
         System.out.println("----");
 
         int n2=5;

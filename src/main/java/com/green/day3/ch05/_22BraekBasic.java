@@ -3,7 +3,7 @@ package com.green.day3.ch05;
 public class _22BraekBasic {
     public static void main(String[] args) {
         int n=1;
-        boolean search=false;
+        boolean search=true;
 
         while (n<100){
             System.out.println(n);
