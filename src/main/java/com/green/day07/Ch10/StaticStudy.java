@@ -76,6 +76,4 @@ class NonStaticNumberBox{
 
         System.out.println("hello");
     }
-
-
 }
