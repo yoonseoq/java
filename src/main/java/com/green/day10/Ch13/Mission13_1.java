@@ -2,7 +2,8 @@ package com.green.day10.Ch13;
 
 import java.util.Arrays;
 
-public class Mission13_1 {
+public class
+Mission13_1 {
     public static void main(String[] args) {
         /*
         다음 메소드는

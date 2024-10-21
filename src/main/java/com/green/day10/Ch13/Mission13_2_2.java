@@ -10,7 +10,7 @@ public class Mission13_2_2 {
                 {7,8,9}};//한칸씩 뒤로 물리게
 
         System.out.println(Arrays.toString(arr));
-        //changeA(arr);
+        changeA(arr);
         System.out.println(Arrays.deepToString(arr));
         arrayChangeOrder(arr);
         System.out.println(Arrays.deepToString(arr));
@@ -31,17 +31,12 @@ public class Mission13_2_2 {
 
     public static void changeA(int[][] arr){
         for (int i = 0; i < arr.length; i++) {
-
-
             int[] a,a1;
              a = arr[0];
              arr[0]=arr[2];
              a1=arr[1];
              arr[1]=a;
              arr[2]=a1;
-
-
-
         }
 
     }

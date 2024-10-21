@@ -14,6 +14,7 @@ public class code_85 {
         scin.close();
 
 
+
     }
 
     static int add(int x,int y){
