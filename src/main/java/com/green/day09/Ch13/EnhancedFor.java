@@ -3,12 +3,18 @@ package com.green.day09.Ch13;
 public class EnhancedFor {
     //향상된 for문
     public static void main(String[] args) {
-        int[] arr ={1,2,5,7};
+        int[] arr ={1,2,5,7};//배열 만들자마자 바로 초기화
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
         System.out.println("-------------");
+
+        /*
+        장점: 짧고 언제까지 돌아야하는지 처음부터 끝까지 값을 알아서 대입 해줌
+         arr배열중에서 item이 '하나씩' 뽑아서 저장함
+         */
+
 
         for(int item: arr){
             System.out.println(item);
@@ -25,15 +31,15 @@ public class EnhancedFor {
         자도응로 마지막 인댁스 값까지 반복한다
 
 
-
         int item=arr[0];
-        System.out,println(item);
+        System.out.println(item);
         int item=arr[1];
 
-        System.out,println(item);
+        System.out.println(item);
         int item=arr[2];
 
-        System.out,println(item);
-         */
+        System.out.println(item);
+        */
+
     }
 }

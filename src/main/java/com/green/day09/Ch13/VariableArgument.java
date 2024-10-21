@@ -40,4 +40,4 @@ public class VariableArgument {
         System.out.println(n1+n2+n3);
     }
 }
-
+//같은이름의 메소드도 들어가는 변수가 다르면 오버로딩

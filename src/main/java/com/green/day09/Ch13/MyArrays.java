@@ -1,8 +1,9 @@
 package com.green.day09.Ch13;
 
 public class MyArrays {
-    public static String toString(int[] arr) {//이렇게 해야 빨간줄 없어짐
 
+    public static String toString(int[] arr) {//이렇게 해야 빨간줄 없어짐
+    //베열안에 있는 문자열을 만들어버림
         StringBuilder sb = new StringBuilder("[");
         int lastIdx = arr.length - 1;
         for (int i = 0; i < arr.length; i++) {
@@ -44,14 +45,19 @@ public class MyArrays {
     }
 
 
-
     public static int[] copyOf(int[] arr) {
        return copyOf(arr, arr.length);
        /*
        public static int[] copyOf(int [] arr, int length) 를 그대로 끌고 옴
+       전체 복사해버림
         */
 
     }
+
+        /*
+        원래 배열애 복사하고 싶은만큼 함
+         */
+
 
     public static int[] copyOf(int [] arr, int length) {
         int[] a = new int[length];
