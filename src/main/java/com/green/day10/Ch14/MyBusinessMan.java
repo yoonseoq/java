@@ -42,7 +42,7 @@ class Man{
         System.out.printf("%s가 점프\n",name);
     }
 }
-class BusinessMan extends Man{
+class BusinessMan extends Man{//상속받고 싶은 클래스옆에 extend만듬
     private String company;
     private String position;
 
@@ -61,6 +61,7 @@ class BusinessMan extends Man{
         this. 멤버필드(전역변수)멤버메소드 부를때
         this() 생성자 호출
         */
+
         this.company=company;
         this.position=position;
     }
