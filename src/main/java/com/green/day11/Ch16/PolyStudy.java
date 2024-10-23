@@ -42,6 +42,7 @@ public class PolyStudy {
 
         cat.crying();
         System.out.println("-----------------");
+        Animal ani=new Animal();
         Animal ani1 = new Cat();
         //ani 동물을 상복받은 애들이면 안에 내용이 달라도 자식객체한테 부모 메소드 호출가능
         Animal ani2 = new Dog();
@@ -85,9 +86,31 @@ public class PolyStudy {
         System.out.println(ani4 instanceof BullDog);
         System.out.println(ani4 instanceof Bird);
 
+        Cat cat2= new Cat();
+        Dog dog2 = new Dog();
+        BullDog bulldog=new BullDog();
+        Bird bird = new Bird();
+
+        //동물을 울려주세요
+        animalCrying(cat2);
+        animalCrying(dog2);
+        animalCrying(bulldog);
+        animalCrying(bird);
 
 
 
+    }
+     static void animalCrying(Animal ani){
+        ani.crying();
+
+         if(ani instanceof BullDog){
+
+        BullDog bd=(BullDog)ani;
+         bd.jump();
+         }
+
+        //부모타입이여서 자식객체값 받을 수 있고 오버라이딩 된 메소드를 호출
+        //동물객체.메소드 야 동물 울수있어? 다형성 만세
     }
 }
 
@@ -101,6 +124,7 @@ class Animal {
     }
 
      */
+
 }
 
 class Cat extends Animal {
@@ -108,6 +132,8 @@ class Cat extends Animal {
     void crying() {
         System.out.println("애옹애옹");
     }
+
+
 }
 
 class Dog extends Animal {
@@ -115,6 +141,8 @@ class Dog extends Animal {
     void crying() {
         System.out.println("댕댕");
     }
+
+
 }
 
 class BullDog extends Dog {
@@ -122,6 +150,7 @@ class BullDog extends Dog {
     //부모의 메소드를 똑같이 재정의한다
     void crying() {
         System.out.println("멍");
+
     }
     //@Override
     void jump() {
