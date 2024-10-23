@@ -10,6 +10,7 @@ public class OverridingEquals {
         Numbox n3 = new Numbox(13);
         System.out.println( "s1.equals(s2):" +(s1==s2));//f주소값 비교이므로 false
         System.out.println("s1.equals(s2):" + (s1.equals(s2)));
+        System.out.println("s1.equals(s2):" + (s1.equals(n1)));
 
 
         System.out.println("n1: " + n1);

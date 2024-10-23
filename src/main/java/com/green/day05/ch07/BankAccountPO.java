@@ -16,7 +16,7 @@ public class BankAccountPO {
     }
 
     static int withdraw(int amount){
-        balance=balance-amount;
+        balance-=amount;
         return balance;
 
     }
