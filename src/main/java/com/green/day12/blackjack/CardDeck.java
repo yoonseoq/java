@@ -39,23 +39,27 @@ public class CardDeck {
 
 
 
-        for(Card cd: cards){
+       /* for(Card cd: cards){ //카드들 출력
             System.out.println(cd);
 
         }
+        */
+        //카드 다 꺼내기
+
         //미션1"",""값을 가지고 있는 카드객체를
 
 
-
-
+/*
         for (int i = 0; i < cards.length; i++) {
-            cards[i]=new Card("A","B");
+            cards[i]=new Card("a","B");
             //반복문 안에 만들어져야 서로 다른객체 만드렁짐
 
         }
+ */
         for (int i = 0; i < denomination.length; i++) {
             denomination[i]=getDenomination(i+1);
         }
+
 
         //enhande
         //enhancedfor로 주소값을 전부 출력
