@@ -57,6 +57,8 @@ class CarTest {
         c3.introduce();
         Car c4 = new Car("auto",5);//2개의 값을 받는 생성자
         c4.introduce();
+        Car c5= new Car("red",7);
+
 
 
     }

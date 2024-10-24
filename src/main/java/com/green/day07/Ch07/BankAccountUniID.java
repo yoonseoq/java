@@ -9,9 +9,8 @@ class BankAccount{
         accNumber = acc;
         ssNumber = ss;
         balance = bal;
-
+        //매게변수 입력값 저장
     }
-
 
     void deposit(int amount){
         balance += amount;

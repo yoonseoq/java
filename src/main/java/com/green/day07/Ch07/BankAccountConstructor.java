@@ -41,6 +41,10 @@ class BankAccount2{
         balance = bal;
     }
     //메소드
+    void infor(String acc, String ss){
+        this.accNumber=acc;
+        this.ssNumber=ss;
+    }
     void deposit(int amount){
         balance += amount;
     }
@@ -67,6 +71,7 @@ public class BankAccountConstructor {
         setter가 있으면 변동이 가능. newtable :수정이 가능한
          */
         BankAccount2 ba1 = new BankAccount2();//기본생성자 호출
+        ba1.infor("8888","5555");
         ba1.checkMyBalance();
         //파라미터가 있는 생성자 호출 or 오버로딩된 생성자 호출 :파라미터 있어도 되구 없어도 되구
         BankAccount2 ba2 = new BankAccount2("111-222","980701-1546464",800000);
