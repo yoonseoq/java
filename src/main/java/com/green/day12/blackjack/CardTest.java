@@ -21,29 +21,48 @@ public class CardTest {
  그냥 for문을 돌면서 null체크하고 null아닌거 찾아서 줘버리고 null처리
  일일이 뒤저서
  */
-class CardTest2 {
+class CardTest2 {//게이머
     public static void main(String[] args) {
         CardDeck cd = new CardDeck();
         Card c1 = cd.draw();
         Gamer gamer = new Gamer();
+
         gamer.recieveCard(c1);
         gamer.recieveCard(cd.draw());
         gamer.recieveCard(cd.draw());
         System.out.println("---------------");
         gamer.showYourCards();
-
+        System.out.println(gamer.getPoint());
+        /*
+        바로 포인트 값이 출력될 수 있게.
+        아까 안된 이유는 겟포인트가딜러영역에 있었기 때문
+         */
         List<Card> list = gamer.openCard();
     }
 
 }
 
-class CardTest3 {
+class CardTest3 {//딜러
     public static void main(String[] args) {
+
         CardDeck cd = new CardDeck();
         Dealer dealer = new Dealer();
         dealer.recieveCard(cd.draw());
         dealer.recieveCard(cd.draw());
         dealer.recieveCard(cd.draw());
         dealer.showYourCards();
+        System.out.println(dealer.getPoint());
+        dealer.needMoreCard(cd);
+        dealer.showYourCards();
+        System.out.println(dealer.getPoint());
+
+    }
+}
+class CardTest4{
+    public static void main(String[] args){
+        Rule rule=new Rule();
+        Gamer gamer=new Gamer();
+        Dealer dealer=new Dealer();
+        rule.getWinner(null,null);
     }
 }

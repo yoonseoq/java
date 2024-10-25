@@ -102,7 +102,7 @@ public class CardDeck {
         Card selectedCard= cards[selectedIdx];//외부에 줘야 할 카드의 index의값, 주고나면 지워야함
         cards[selectedIdx]=null;
         selectedIdx++;
-        return selectedCard;
+        return selectedCard;//뽑은 카드를 반환함
     }
     public void checkCard(){
        for (Card c: cards)
