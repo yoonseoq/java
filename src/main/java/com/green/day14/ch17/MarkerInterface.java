@@ -1,4 +1,4 @@
-package com.green.day14;
+package com.green.day14.ch17;
 
 public class MarkerInterface {
     public static void main(String[] args) {
@@ -10,7 +10,12 @@ public class MarkerInterface {
         Report2 rpt2=new Report2();
         Report3 rpt3=new Report3();
 
-
+         //
+        Printer prn= new Printer();
+        prn.printContents(rpt0);
+        prn.printContents(rpt1);
+        prn.printContents(rpt2);
+        prn.printContents(rpt3);
     }
 }
 
@@ -53,7 +58,7 @@ class Report2 implements Printable2,Upper{
         return "Simple Funny News!";
     }
 }
-class Report3 implements Printable2,Upper,Lower{
+class Report3 implements Printable2,Upper,Lower{//먼저 트루가 떴기 때문에 upeer가 나와버림
     public String getContents(){
         return "Simple Funny News!";
     }
@@ -61,13 +66,21 @@ class Report3 implements Printable2,Upper,Lower{
 
 
 
-
+//추상메소드는 상속받은 한 어떻게든 구현시켜야함
 
 
 class Printer{
     public void printContents(Printable2 doc){
-        if (doc instanceof Lower){
-            System.out.println(doc.getContents().toLowerCase());
+        if (doc instanceof Upper){
+            System.out.println(doc.getContents().toUpperCase());//ㅇ영문자 대문자로
+        } else if (doc instanceof Lower) {
+            String str= doc.getContents();
+            System.out.println(str.toLowerCase());
+            //위에 두줄과 아래 한줄이 같음
+            System.out.println(doc.getContents().toLowerCase());//영ㅂ문자 소문자로
+
+        }else {//다 대문자로 나옴
+            System.out.println(doc.getContents());
         }
     }
 }

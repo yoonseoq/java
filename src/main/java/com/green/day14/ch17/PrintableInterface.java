@@ -1,4 +1,4 @@
-package com.green.day14;
+package com.green.day14.ch17;
 
 /*
     인터페이스(Imterface):이질적인 플랫폼 간에 통신을 할 수 있는 역할을해주는 것을 인터페이스라고 한다_

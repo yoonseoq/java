@@ -1,4 +1,4 @@
-package com.green.day14;
+package com.green.day14.ch17;
 
 public abstract class AbstractStudy {
     /*

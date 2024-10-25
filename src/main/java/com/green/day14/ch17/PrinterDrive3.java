@@ -1,4 +1,7 @@
-package com.green.day14;
+package com.green.day14.ch17;
+
+import com.green.day14.ch17.Prn204Drv;
+
 /*
 
 클래스가 클래스 상속: extends
@@ -15,7 +18,7 @@ public class PrinterDrive3 {
         //둘다 printable담겨있지만  Prn204Drv()은 printCMYK을 몰라서
     }
 }
-interface ColorPrintable extends Printable{
+interface ColorPrintable extends Printable {
     void printCMYK(String doc);
 }
 //prm909Drv 객체으;ㅣ 주소값 담을 수 있는 타입
