@@ -9,7 +9,7 @@ public class code_81 {
 
     public static void show() {//static메소는 static메소드만 소환가능
 
-        System.out.println("mid");
+        System.out.println("fuck");
     }
 
 }
