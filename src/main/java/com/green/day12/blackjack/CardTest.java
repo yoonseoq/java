@@ -5,6 +5,7 @@ import java.util.List;
 public class CardTest {
     public static void main(String[] args) {
         CardDeck cd = new CardDeck();
+        cd.checkCard();
         //카드덱타입의 변수선언과 동시에 초기화.카드덱 객체 주소값만 넣을 수 있다
         System.out.println(cd.getDenomination(11));
         Card c = cd.draw();//카드덱클라스 안에 객체주소값 담겨 있는것
