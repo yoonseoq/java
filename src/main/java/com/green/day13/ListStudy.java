@@ -21,15 +21,8 @@ public class ListStudy {
     List 변수명 = new LinkedList():
     이렇게 작성 가능하다
     나를 상속받은 누군가가 있다
+
      */
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
         List list =new ArrayList();//알트엔터 누르면 임포트툄,toString값이 오버라이딩 되어있다
         list.add(10);//0번방에 들어감
