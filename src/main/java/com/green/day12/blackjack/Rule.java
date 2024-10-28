@@ -9,7 +9,28 @@ private final int MAX_POINT=21;
         비긴경우. 둘의값이 같을 경우, 둘다 21을 넘은경우
 
          */
-    int pointg= gamer.getPoint();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        int pointg= gamer.getPoint();
     int pointd= dealer.getPoint();
         System.out.println(pointg);
         System.out.println(pointd);

@@ -28,9 +28,9 @@ class CardTest2 {//게이머
         Card c1 = cd.draw();
         Gamer gamer = new Gamer();
 
-        gamer.recieveCard(c1);
-        gamer.recieveCard(cd.draw());
-        gamer.recieveCard(cd.draw());
+        gamer.receiveCard(c1);
+        gamer.receiveCard(cd.draw());
+        gamer.receiveCard(cd.draw());
         System.out.println("---------------");
         gamer.showYourCards();
         System.out.println(gamer.getPoint());
@@ -40,7 +40,6 @@ class CardTest2 {//게이머
          */
         List<Card> list = gamer.openCard();
     }
-
 }
 
 class CardTest3 {//딜러
@@ -48,9 +47,9 @@ class CardTest3 {//딜러
 
         CardDeck cd = new CardDeck();
         Dealer dealer = new Dealer();
-        dealer.recieveCard(cd.draw());
-        dealer.recieveCard(cd.draw());
-        dealer.recieveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
         dealer.showYourCards();
         System.out.println(dealer.getPoint());
         dealer.needMoreCard(cd);
@@ -64,6 +63,8 @@ class CardTest4{
         Rule rule=new Rule();
         Gamer gamer=new Gamer();
         Dealer dealer=new Dealer();
-        rule.getWinner(null,null);
+        gamer.point=22;
+        dealer.point=18;
+        rule.getWinner(dealer,gamer);
     }
 }

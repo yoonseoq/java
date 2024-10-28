@@ -13,10 +13,35 @@ public class BlackJack {
         //번갈아 가면서 게이머와 딜러가 2장의 카드를 받을 수 있게
         //System.out.println(cd.draw()); 이 작업은 또 카드주는거 호출해서 카드한장을 버리게함
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         for (int i = 0; i < 2; i++) {
             //2번씩 반복
-            dealer.recieveCard(cd.draw());
-            gamer.recieveCard(cd.draw());
+            dealer.receiveCard(cd.draw());
+            gamer.receiveCard(cd.draw());
         }
 
 
@@ -32,7 +57,7 @@ public class BlackJack {
                 break;
             }
             //게이머가 카드한장 더 받음
-            gamer.recieveCard(cd.draw());
+            gamer.receiveCard(cd.draw());
         }
         System.out.println("딜러카드공개");
         dealer.showYourCards();

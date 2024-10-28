@@ -7,7 +7,7 @@ public class Dealer extends Gamer{
 
         if(point<=16){
 
-            recieveCard(cd.draw());
+            receiveCard(cd.draw());
         }
     }
 }

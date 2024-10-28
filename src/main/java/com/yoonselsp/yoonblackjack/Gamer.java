@@ -32,8 +32,19 @@ public class Gamer {
 
     }
 
+    public void showYourCards(){
+        for(Card c: cards){
+            System.out.println(c);
+        }
+        System.out.println(cards);
+    }
+
 
     public List<Card> openCard(){
       return cards;
+    }
+
+    public int getPoint(){
+        return point;
     }
 }

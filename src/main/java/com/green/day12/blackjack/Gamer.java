@@ -18,7 +18,7 @@ public class Gamer {
     }
 
 
-    public void recieveCard(Card c1) {
+    public void receiveCard(Card c1) {
         //
         int point= switch (c1.getDenomination()){//받은카드값을 포인트로 전환해서 넣기
             case "A"->1;
