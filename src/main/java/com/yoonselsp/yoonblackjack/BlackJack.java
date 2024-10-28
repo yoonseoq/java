@@ -20,9 +20,6 @@ public class BlackJack {//실전게임
         dealer.showYourCards();
         gamer.showYourCards();
         rule.getWinner(dealer,gamer);
-
-
-
-
+        System.out.println("一旦ここまでお終い！");
     }
 }
