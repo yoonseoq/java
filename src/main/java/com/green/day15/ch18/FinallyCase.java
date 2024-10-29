@@ -23,6 +23,7 @@ public class FinallyCase {
         //빨간줄 뜨는이유 똑같이 던지거나(메인메소드여서 못던짐) 트라이캐치
     }
 }
+
 /*
 class Files{
     public static BufferedWriter newBufferedWriter(Path path){
@@ -31,15 +32,22 @@ class Files{
 
 }
  */
-class FinallyCase2{
+class FinallyCase2 {
     public static void main(String[] args) {
+        BufferedWriter writer = null;
         try {
-        Path path=Paths.get("D:/simple.txt");
-        BufferedWriter writer=Files.newBufferedWriter(path);
-        writer.write("finallycase");
-        writer.close();
+            Path path = Paths.get("D:/simple.txt");
+            writer = Files.newBufferedWriter(path);
+            writer.write("FinallyCase");
         } catch (IOException e) {
-            e.getMessage();
+            e.printStackTrace();
         }
+
+        try {
+            writer.close();
+        } catch (IOException e) {
+
+        }
+
     }
 }
