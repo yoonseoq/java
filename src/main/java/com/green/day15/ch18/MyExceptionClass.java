@@ -8,8 +8,8 @@ public class MyExceptionClass {
         try {
             int age = readAge();//왜 빨간줄
             System.out.printf("입력된 나이: %d\n",age);
-        } catch (ReadAgeException e) {
-            System.out.println(e.getMessage());
+        } catch (ReadAgeException e) {//던진 예외를 캐치가 잡음
+            System.out.println(e.getMessage());//유효하지 않다 어저구
         }
     }
     //던지는 메소드를 해결하고 싶으면 try-catch문으로 감싸기
@@ -17,7 +17,7 @@ public class MyExceptionClass {
     public static int readAge() throws ReadAgeException{
         Scanner scan = new Scanner(System.in);
         int age= scan.nextInt();
-        if(age<0){
+        if(age<0){//나이가 0보다 작으면 예외
             scan.close();
             throw new ReadAgeException();
         }

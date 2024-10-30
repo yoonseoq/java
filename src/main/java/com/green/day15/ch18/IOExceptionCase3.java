@@ -7,6 +7,7 @@ import java.nio.file.*;//아래에 있는 모든 클래스가 임포트됨
 public class IOExceptionCase3 {
     public static void main(String[] args) {
         try {
+            System.out.println("양양");
             md1();
         }catch (IOException e){
             e.printStackTrace();

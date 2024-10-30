@@ -22,7 +22,7 @@ public class FinallyCase3 {
             try{
                 System.out.println("어 되네");
                 if (writer!=null){
-                    writer.close();
+                    writer.close();//사용하면 닫아줘야함
                 }
             } catch (IOException e) {
 
