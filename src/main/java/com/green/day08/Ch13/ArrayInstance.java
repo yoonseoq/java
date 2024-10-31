@@ -1,6 +1,7 @@
 package com.green.day08.Ch13;
 
-public class ArrayInstance {
+public class
+ArrayInstance {
     public static void main(String[] args) {
         //길이가 5인 int형 1차원 배열의 생성
 

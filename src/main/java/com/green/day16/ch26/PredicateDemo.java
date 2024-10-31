@@ -10,37 +10,40 @@ import java.util.function.Predicate;
 public class PredicateDemo {
     public static void main(String[] args) {
         Predicate<Integer> preMore10 = n -> n > 10;
+        //파라미터 하나여서 소괄호 생략가능
+        //<>부분이 타입
+        //그리고 테스트 메소드를 오버라이딩 하도 있다 그리고 리턴은 무적권 boolean
         System.out.println(preMore10.test(9));
         System.out.println(preMore10.test(11));
         examPredicate(preMore10, 9);
         examPredicate(n -> n > 10, 9);
         examPredicate(n -> n > 10, 12);
-//남자,남,여자,여 이런값들만 허용(true),나머지 false
 
-        Predicate<String> preCheckGender=s->"남".equals(s)||
-                "남자".equals(s)||"여자".equals(s)||"여".equals(s);
+        //남자,남,여자,여 이런값들만 허용(true),나머지 false
+        Predicate<String> preCheckGender = s -> "남".equals(s) ||
+                "남자".equals(s) || "여자".equals(s) || "여".equals(s);
 
-        Predicate<String> preCheckGender2=s->switch (s){
-            case "남","남자","여","여자"->true;
+        Predicate<String> preCheckGender2 = s -> switch (s) {
+            case "남", "남자", "여", "여자" -> true;
             default -> false;
         };
 
-        boolean result= switch ("남자"){
-            case "남","남자","여","여자"->true;
+        boolean result = switch ("남자") {
+            case "남", "남자", "여", "여자" -> true;
             default -> false;
         };
 
-        String gender="남";
+        String gender = "남";
         System.out.println(gender);
-        if (preCheckGender.test(gender)){
+        if (preCheckGender.test(gender)) {
             System.out.println("성별을 잘 입력하셨습니다.");
-        }else {
+        } else {
             System.out.println("성별을 확인해 주세요");
         }
 
-        if (preCheckGender2.test(gender)){
+        if (preCheckGender2.test(gender)) {
             System.out.println("성별을 잘 입력하셨습니다.");
-        }else {
+        } else {
             System.out.println("성별을 확인해 주세요");
         }
     }

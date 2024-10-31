@@ -30,4 +30,6 @@ public class BiPredicateDemo {
         //System.out.println(conv1.test("Robot","Robut"));
     }
     //같은 스코프에서 명칭이 중복되면 에러(보윤씨
+    //리턴타입은 무조건 boolean
+    //인터페이스 위에 에노테이션이 있으면 실수방지용
 }

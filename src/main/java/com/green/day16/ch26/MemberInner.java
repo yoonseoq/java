@@ -1,6 +1,6 @@
 package com.green.day16.ch26;
 
-public class MemberInner {
+public class MemberInner {//굳이 안쓰니까 무시
     public static void main(String[] args) {
         Outer2 o1=new Outer2();
         Outer2 o2=new Outer2();
