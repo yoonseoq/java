@@ -4,7 +4,7 @@ public class PrinterDriver2 {
     public static void main(String[] args) {
         String myDoc="This is a report about...";
 
-        Printable prn1=new Prn204Drv();
+        Printable prn1=new Prn204Drv(); //각각 객체화함
         Printable prn2=new Prn731Drv();
 
         //형제메소드여서
@@ -12,9 +12,16 @@ public class PrinterDriver2 {
         // 204랑 731은 서로 관계가 없어서 서로호출 안됨
 
 
+
         prn1.print(myDoc);
         System.out.println();
         prn2.print(myDoc);
+
+        prn1=prn2;
+        Prn204Drv prn204=(Prn204Drv) prn1;//형변환할때 명시적 해줘야함
+        prn204=(Prn204Drv) prn2;
+        //대충 형제끼리 호출하면 런타임에러뜬다고 근데 잘 모르겠다.
+        //그냥 부모는 자식타입의 객체를 ㄷ담을 수 있다 외에는 다 안된다
     }
 }
 

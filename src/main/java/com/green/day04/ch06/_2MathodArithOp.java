@@ -4,14 +4,14 @@ public class _2MathodArithOp {
     public static void main(String[] args) {
         int n1= 7;
         int n2= 7;
-        substract(7,3);
-        System.out.println("result:"+returnSubstract(7,5));
-        System.out.println(returnMultifly(4,5));
-        multifly(4,6);
-        float r=divide(10,3);
+        substract(7,3);//void
+        System.out.println("result:"+returnSubstract(7,5));//int
+        System.out.println(returnMultifly(4,5));//int
+        multifly(4,6);//void
+        float r=divide(10,3);//이런거 특. 반환값 있음
         System.out.println(r);
 
-        int r2=modulo(10,4);
+        int r2=modulo(10,4);//int
         System.out.println(r2);
 
 

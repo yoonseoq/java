@@ -12,7 +12,7 @@ public class InfRecul {
         }
         //showHi(cnt--); 안됨 이건
         //(--cnt);
-        showHi(cnt-1);//이거 굳이 안해도됨ㅋ
+        //showHi(cnt-1);//이거 굳이 안해도됨ㅋ
     }
 }
 //shoe Hi 3 >> Hi

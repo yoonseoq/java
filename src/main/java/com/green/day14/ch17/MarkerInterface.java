@@ -3,7 +3,7 @@ package com.green.day14.ch17;
 public class MarkerInterface {
     public static void main(String[] args) {
 
-        Report0 rpt0=new Report0("contents");
+        Report0 rpt0=new Report0("fxxk");
         //밑에 미리 스트링타입이 변수로 들어가능
         // 생성자 만들어 놔서 그냥 매개변수 집어넣으면 된다
         Report1 rpt1=new Report1();
