@@ -4,19 +4,20 @@ import java.util.Arrays;
 
 public class q1 {
     public static void main(String[] args) {
-        Solution s=new Solution();
-        int [] arr={1, 2, 3, 4, 5, 6};
+        Solution s = new Solution();
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println(Arrays.toString(s.solution(arr)));
     }
 }
+
 class Solution {
     public int[] solution(int[] arr) {
 
-        int l=arr.length;
-        int tmp=1;
+        int l = arr.length;
+        int tmp = 1;
 
-        while (tmp<l){
-            tmp *=2;
+        while (tmp < l) {
+            tmp *= 2;
         }
 
         //일단 배열길이를 만들어 놓고 그 배열만큼 정답배열에 넣음
@@ -30,7 +31,7 @@ class Solution {
         int[] answer = new int[tmp];
 
         for (int i = 0; i < l; i++) {
-            answer[i]=arr[i];
+            answer[i] = arr[i];
         }
 
 
