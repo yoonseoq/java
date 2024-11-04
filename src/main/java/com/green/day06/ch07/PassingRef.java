@@ -23,7 +23,6 @@ public class PassingRef {//메소드에다가 레퍼런스값을 전달
 
           void or return
           static or non-static
-
          */
 
         check(ba);//void에 static이다

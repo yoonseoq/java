@@ -8,14 +8,10 @@ package com.green.day06.ch07;
     void deposit(int amount){
         balance+=amount;
     }
-
     void withdraw(int amount){
         balance-=amount;
     }
-
     void checkMyBalance(){
         System.out.printf("balance:%d\n",balance);
     }
-
-
 }
