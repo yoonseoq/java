@@ -9,7 +9,7 @@ public class BoardDaoTest {
     }
     private static void delete(BoardDao dao){
 
-        int result = dao.delBoard(10);
+        int result = dao.delBoard(1);
         System.out.println("시마이?");
     }
     private static void insert(BoardDao dao){

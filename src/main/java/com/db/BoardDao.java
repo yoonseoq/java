@@ -31,11 +31,10 @@ public class BoardDao {
     public int delBoard(int boardId){
         int result=0;
         String sql=" DELETE FROM board "+
-                " WHERE board_id = ? "; // 스페이스바도 중요
+                " WHERE board_id = ? ";
         try (Connection conn=MyConnection.getConn()
         ; PreparedStatement ps = conn.prepareStatement(sql)){
             ps.setInt(1,boardId);
-            // 왜 안됐ㄴ,ㄵ; 물음표가 하나밖에 없었어서 인덱스가 2부터이면 말도안돼서 에러가 터짐
             result=ps.executeUpdate();
         }catch (Exception e){
             e.printStackTrace();
