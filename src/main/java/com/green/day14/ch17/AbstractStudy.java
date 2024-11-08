@@ -45,7 +45,7 @@ abstract class ImplementsStudy2 extends AbstractStudy{
  class  AbstractStudyTest{
      public static void main(String[] args) {
          //AbstractStudy as = new AbstractStudy();// 추상클래스여서 객체화 불가능
-         AbstractStudy as2 = new ImplementsStudy();// 추상클래스여서 객체화 불가능
-        as2.sum();//AbstractStudy는 sum메소드를 알고 있어서 고로 호출이 가능하다
+         AbstractStudy as = new ImplementsStudy();// 추상클래스여서 객체화 불가능
+        as.sum();//AbstractStudy는 sum메소드를 알고 있어서 고로 호출이 가능하다
      }
  }

@@ -21,7 +21,7 @@ public class TvFactory {
         //생성자는 하나인데 앞에 프라이빗 붙임 기본생성자 만듦?
     }
 
-    public Tv factory(String tvName, String speakerName, String wooferName) {
+    public Tv  factory(String tvName, String speakerName, String wooferName) {
         Woofer woofer = switch (wooferName) {
             case "hanil" -> new HanilWoofer();
             case "marten" -> new MartenWoofer();
