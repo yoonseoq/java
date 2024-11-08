@@ -28,5 +28,10 @@ public class Board {
 
     public String getUpdatedAt() {return updatedAt;}
     public void setUpdatedAt(String updatedAt) {this.updatedAt = updatedAt;}
+
+    public String toString(){
+        return String.format("%d, %s, %s, %s, %s, %s"
+        ,boardId, title, contents, writer, createdAt, updatedAt);
+    }
 }
 
