@@ -19,13 +19,20 @@ public class BoardDaoTest {
         }
         //insert(dao, board);
         //delete(dao);
+        //selectOne(dao, 6);
         //update(dao,board);
         //updateDynamic(dao,board);
         selectAll(dao);
     }
+    /*private static void selectOne(BoardDao dao, int boardId) {
+        Board board = dao.selBoardOne(boardId);
+        System.out.println(board);
+    }
+
+     */
     private static void delete(BoardDao dao) {
 
-        int result = dao.delBoard(13);
+        int result = dao.delBoard(12);
         System.out.println("result" + result);
     }
     private static void insert(BoardDao dao, Board board) {
