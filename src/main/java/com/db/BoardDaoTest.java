@@ -28,6 +28,7 @@ public class BoardDaoTest {
         Board board = dao.selBoardOne(boardId);
         System.out.println(board);
     }
+    あなたはどうして
 
      */
     private static void delete(BoardDao dao) {
